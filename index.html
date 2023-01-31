@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
     <title>Document</title>
     
     <link rel="stylesheet" href="./css/reset.css" />
@@ -989,6 +990,108 @@
     <script src="https://kit.fontawesome.com/b647c590f1.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script  type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.js">
+        // 신제품 슬라이드
+        $(document).ready(function(){
+        $('.new_slide').slick({
+          slidesToShow: 4,
+          slidesToScroll:1,
+          appendArrows: $('#arrows'),
+          prevArrow: $('#new_prev'),
+          nextArrow: $('#new_next'),
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+        // 배너
+        $(function(){
+        setInterval(function(){
+          $('.banner_inner .banner_slide').animate({ left : '-1250px'},1000,
+          function(){
+            $('.banner_inner .banner_slide').append($('.banner_slide li').eq(0));
+            $('.banner_inner .banner_slide').css('left',0);
+          })
+        },3000);
+      });
+    </script>
+
+    <script  type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.js">
+      // 베스트셀러 슬라이드
+      $(document).ready(function(){
+        $('.best_slide').slick({
+          slidesToShow: 4,
+          slidesToScroll:1,
+          prevArrow: $('#best_prev'),
+          nextArrow: $('#best_next'),
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      // 오직 시드물에서 만나요
+      $('.nano_category').on('click', function() {
+        $('.nano_category').css('color','#000000'),
+        $('.mada_category, .mask_category, .sacchara_category, .care_category').css('color','#9D9D9D'),
+        $('.only_nano').show(),
+        $('.only_mada, .only_mask, .only_sacchara, .only_care').hide();
+      });
+
+      $('.nano_category').trigger('click');
+
+      $('.mada_category').on('click', function() {
+          $('.mada_category').css('color','#000000'),
+          $('.nano_category, .mask_category, .sacchara_category, .care_category').css('color','#9D9D9D'),
+          $('.only_mada').show(),
+          $('.only_nano, .only_mask, .only_sacchara, .only_care').hide();
+      });
+
+      $('.mask_category').on('click', function() {
+          $('.mask_category').css('color','#000000'),
+          $('.nano_category, .mada_category, .sacchara_category, .care_category').css('color','#9D9D9D'),
+          $('.only_mask').show(),
+          $('.only_nano, .only_mada, .only_sacchara, .only_care').hide();
+      });
+
+      $('.sacchara_category').on('click', function() {
+          $('.sacchara_category').css('color','#000000'),
+          $('.nano_category, .mada_category, .mask_category, .care_category').css('color','#9D9D9D'),
+          $('.only_sacchara').show(),
+          $('.only_nano, .only_mada, .only_mask, .only_care').hide();
+      });
+
+      $('.care_category').on('click', function() {
+          $('.care_category').css('color','#000000'),
+          $('.nano_category, .mada_category, .mask_category, .sacchara_category').css('color','#9D9D9D'),
+          $('.only_care').show(),
+          $('.only_nano, .only_mada, only_mada, .only_mask, .only_sacchara').hide();
+      });
+    </script>
+
+    <script  type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.js">
+      // 지금 시드물은?
+      $(document).ready(function(){
+        $('.now_slide').slick({
+        slidesToShow: 2,
+        slidesToScroll:1,
+        prevArrow: $('#now_prev'),
+        nextArrow: $('#now_next'),
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      // 모달 열기
+      $('.modal_btn').click(function () {
+        $('.modal').show();
+      });
+
+      // 모달 닫기
+      $('.close').click(function () {
+        $('.modal').hide();
+      });
+    </script>
     
   </body>
 </html>
