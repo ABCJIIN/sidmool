@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <Link rel="stylesheet" type="text/css" href="./css/footer.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="top">
+        <div class="top_inner">
+          <div class="top_left">
+            <h1>
+              <a href="./index.html" target="_self">
+                <img src="./img/logo.png" alt="logo"/>
+              </a>
+            </h1>
+            <div class="search">
+              <input type="text" autofocus placeholder="무기자차를 검색해보세요" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="top_right">
+            <ul>
+              <li><a href="#none">고객센터</a></li>
+              <li><a href="#none">로그인</a></li>
+              <li><a href="#none">회원가입</a></li>
+              <li><a href="#none">주문조회</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="gnb">
+        <div class="gnb_inner">
+          <div class="menu">
+            <ul class="menu_main">
+              <li class="main_list">
+                <a href="#none">전체제품</a>
+                <div class="list_drop">
+                  <ul class="list_container">
+                    <li class="list_title"><a href="#none">쇼핑</a></li>
+                  <ul>
+                    <li><a href="#none">신제품</a></li>
+                    <li><a href="#none">BEST</a></li>
+                    <li><a href="#none">민중기시리즈</a></li>
+                    <li><a href="#none">미취학가능제품</a></li>
+                    <li><a href="#none">청소년화장품추천</a></li>
+                    <li><a href="#none">예비맘추천</a></li>
+                    <li><a href="#none">세트할인</a></li>
+                  </ul>
+                </ul>
+                  <ul class="list_container">
+                    <li class="list_title"><a href="#none">사용단계별</a></li>
+                    <ul>
+                      <li><a href="#none">클렌징</a></li>
+                      <li><a href="#none">색조</a></li>
+                      <li><a href="#none">퍼스트에센스</a></li>
+                      <li><a href="#none">스킨토너미스트</a></li>
+                      <li><a href="#none">앰플</a></li>
+                      <li><a href="#none">에센스세럼</a></li>
+                      <li><a href="#none">수분젤로션</a></li>
+                      <li><a href="#none">크림</a></li>
+                      <li><a href="#none">수분크림</a></li>
+                      <li><a href="#none">립&아이</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#none">페이스&바디오일</a></li>
+                      <li><a href="#none">마스크팩</a></li>
+                      <li><a href="#none">바디&헤어</a></li>
+                      <li><a href="#none">자외산차단</a></li>
+                      <li><a href="#none">스킨케어브러쉬</a></li>
+                      <li><a href="#none">화장소품</a></li>
+                      <li><a href="#none">수제비누</a></li>
+                      <li><a href="#none">건강식품</a></li>
+                      <li><a href="#none">레이저관리</a></li>
+                      <li><a href="#none">남성용화장품</a></li>
+                    </ul>
+                  </ul>
+                  <ul class="list_container">
+                    <li class="list_title"><a href="#none">피부고민별</a></li>
+                    <ul>
+                      <li><a href="#none">모공</a></li>
+                      <li><a href="#none">피지</a></li>
+                      <li><a href="#none">각질</a></li>
+                      <li><a href="#none">주름</a></li>
+                      <li><a href="#none">트럽</a></li>
+                      <li><a href="#none">화이트헤드</a></li>
+                      <li><a href="#none">블랙헤드</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#none">속건성</a></li>
+                      <li><a href="#none">약건성</a></li>
+                      <li><a href="#none">미백</a></li>
+                      <li><a href="#none">건조&민감</a></li>
+                      <li><a href="#none">탈모</a></li>
+                      <li><a href="#none">미백</a></li>
+                      <li><a href="#none">탄력</a></li>
+                    </ul>
+                  </ul>
+                  <ul class="list_container">
+                    <li class="list_title"><a href="#none">성분라인별</a></li>
+                    <ul>
+                      <li><a href="#none">녹차</a></li>
+                      <li><a href="#none">닥터갈라톡</a></li>
+                      <li><a href="#none">닥터트럽</a></li>
+                      <li><a href="#none">달팽이</a></li>
+                      <li><a href="#none">동백</a></li>
+                      <li><a href="#none">레드큐어</a></li>
+                      <li><a href="#none">무오일 다당류</a></li>
+                      <li><a href="#none">무기자차</a></li>
+                      <li><a href="#none">메가펩타이드</a></li>
+                      <li><a href="#none">봉독</a></li>
+                      <li><a href="#none">바하</a></li>
+                      <li><a href="#none">병풀(센텔라)</a></li>
+                      <li><a href="#none">뷰리즈</a></li>
+                      <li><a href="#none">사카로발효</a></li>
+                      <li><a href="#none">스킨소스</a></li>
+                      <li><a href="#none">세라마이드</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#none">알로에</a></li>
+                      <li><a href="#none">아하</a></li>
+                      <li><a href="#none">아스타잔틴</a></li>
+                      <li><a href="#none">아크바이</a></li>
+                      <li><a href="#none">징크</a></li>
+                      <li><a href="#none">천연오일</a></li>
+                      <li><a href="#none">카렌듈라</a></li>
+                      <li><a href="#none">콜라겐</a></li>
+                      <li><a href="#none">티트리</a></li>
+                      <li><a href="#none">판테놀</a></li>
+                      <li><a href="#none">프로폴리스</a></li>
+                      <li><a href="#none">히아루론산</a></li>
+                      <li><a href="#none">호호바</a></li>
+                      <li><a href="#none">휴먼올리고</a></li>
+                      <li><a href="#none">호호바</a></li>
+                      <li><a href="#none">EGF</a></li>
+                    </ul>
+                  </ul>
+                </div>
+              </li>
+              <li class="main_list">
+                <a href="#none">시드물 소개</a>
+              </li>
+              <li class="main_list">
+                <a href="#none">사용후기</a>
+              </li>
+              <li class="main_list">
+                <a href="#none">이벤트</a>
+              </li>
+              <li class="main_list">
+                <a href="#none">게시판</a>
+              </li>
+              <li class="main_list">
+                <a href="#none">사용방법</a>
+              </li>
+              <li class="main_list">
+                <a href="#none">성분사전</a>
+              </li>
+            </ul>
+          </div>
+          <div class="privacy">
+            <ul>
+              <li>
+                <a href="#none"><img src="./img/mypage.png" alt="mypage" /></a>
+              </li>
+              <li>
+                <a href="#none"><img src="./img/basket.png" alt="basket" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main_first">
+        <div class="slide">
+          <div class="slide_item item1"><a href="#none"><img class="slide_img" src="./img/slide1.png" alt="slide"></a></div>
+          <div class="slide_item item2"><a href="#none"><img class="slide_img" src="./img/slide2.png" alt="slide"></a></div>
+          <div class="slide_item item3"><a href="#none"><img class="slide_img" src="./img/slide3.png" alt="slide"></a></div>
+          <div class="slide_prev_button slide_button"><img src="./img/prev.png" alt="prev button"></div>
+          <div class="slide_next_button slide_button"><img src="./img/next.png" alt="next button"></div>
+          <ul class="slide_pagination"></ul>
+        </div>
+      </section>
+      <section class="main_second">
+        <div class="keyword">
+            <h1>HOT 인기 검색어</h1>
+          <div class="keyword_item">
+            <a href="#none"><span>#시카로 광채 앰플</span></a>
+            <a href="#none"><span>#민중기 EGF 앰플</span></a>
+            <a href="#none"><span>#블랙헤드</span></a>
+            <a href="#none"><span>#수분크림</span></a>
+            <a href="#none"><span>#정품 모공브러쉬</span></a>
+            <a href="#none"><span>#무기자차</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="main_third">
+        <div class="new">
+          <div class="new_title">
+            <h2>신제품</h2>
+            <p>고객님의 의견을 반영하여 만든</p>
+            <a href="#none">전체보기+</a>
+          </div>
+          <div class="new_slide">
+            <div class="new_item">
+              <div class="new_img">
+                <a href="#none"><img src="./img/new_product1.png" alt="new product"></a>
+                <div class="new_shopping">
+                  <span><img src="./img/heart.png" alt="wish"></span>
+                  <span><img src="./img/basket.png" alt="basket"></span>
+                </div>
+              </div>  
+              <div class="new_info">
+                <div class="new_explain">
+                  <a href="#none">
+                    <p>나이아신아마이드 30% 생기, 모공을 위한 믹스템!</p>
+                    <p>[제로마진] 스킨소스 나이아신 30 앰플 12ml</p>
+                  </a>
+                </div>
+                <div class="new_price">
+                  <span>5,800원</span>
+                  <a href="#none"><span>4.8(23)</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="new_item">
+              <div class="new_img">
+                <a href="#none"><img src="./img/new_product2.png" alt="new product"></a>
+                <div class="new_shopping">
+                  <span><img src="./img/heart.png" alt="wish"></span>
+                  <span><img src="./img/basket.png" alt="basket"></span>
+                </div>
+              </div>  
+              <div class="new_info">
+                <div class="new_explain">
+                  <a href="#none">
+                    <p>극건성/극민감 찐장벽케어 영국산 덱스판테놀 50%</p>
+                    <p>스킨소스 덱스판테놀 50 앰플 30ml</p>
+                  </a>
+                </div>
+                <div class="new_price">
+                  <span>24,800원</span>
+                  <span>36,800원</span>
+                  <a href="#none"><span>4.8(23)</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="new_item">
+              <div class="new_img">
+                <a href="#none"><img src="./img/new_product3.png" alt="new product"></a>
+                <div class="new_shopping">
+                  <span><img src="./img/heart.png" alt="wish"></span>
+                  <span><img src="./img/basket.png" alt="basket"></span>
+                </div>
+              </div>  
+              <div class="new_info">
+                <div class="new_explain">
+                  <a href="#none">
+                    <p>시카, 탄력, 미백 한번에! 데일리 흔적 케어</p>
+                    <p>레티놀 흔적 리페어 앰플 30ml</p>
+                  </a>
+                </div>
+                <div class="new_price">
+                  <span>21,800원</span>
+                  <span>40,000원</span>
+                  <a href="#none"><span>4.8(23)</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="new_item">
+              <div class="new_img">
+                <a href="#none"><img src="./img/new_product4.png" alt="new product"></a>
+                <div class="new_shopping">
+                  <span><img src="./img/heart.png" alt="wish"></span>
+                  <span><img src="./img/basket.png" alt="basket"></span>
+                </div>
+              </div>  
+              <div class="new_info">
+                <div class="new_explain">
+                  <a href="#none">
+                    <p>Winter is coming 피부와 마음을 촉촉하게 감싸드리는</p>
+                    <p>울트라 페이셜 세라마이드 젤 크림 80ml</p>
+                  </a>
+                </div>
+                <div class="new_price">
+                  <span>13,900원</span>
+                  <span>23,800원</span>
+                  <a href="#none"><span>4.8(23)</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="new_item">
+              <div class="new_img">
+                <a href="#none"><img src="./img/new_product5.png" alt="new product"></a>
+                <div class="new_shopping">
+                  <span><img src="./img/heart.png" alt="wish"></span>
+                  <span><img src="./img/basket.png" alt="basket"></span>
+                </div>
+              </div>  
+              <div class="new_info">
+                <div class="new_explain">
+                  <a href="#none">
+                    <p>사랑하는 어머니 피부를 위한 콜라겐 90 + 아데노신 앰플</p>
+                    <p>[제로마진] 스킨소스 아데노신 10000 앰플 30ml</p>
+                  </a>
+                </div>
+                <div class="new_price">
+                  <span>6,800원</span>
+                  <a href="#none"><span>4.8(23)</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="new_item">
+              <div class="new_img">
+                <a href="#none"><img src="./img/new_product6.png" alt="new product"></a>
+                <div class="new_shopping">
+                  <span><img src="./img/heart.png" alt="wish"></span>
+                  <span><img src="./img/basket.png" alt="basket"></span>
+                </div>
+              </div>  
+              <div class="new_info">
+                <div class="new_explain">
+                  <a href="#none">
+                    <p>주름 탄력 수분 케어 레티놀 대체 저자극 성분</p>
+                    <p>바쿠치올 수분젤 80ml</p>
+                  </a>
+                </div>
+                <div class="new_price">
+                  <span>18,800원</span>
+                  <a href="#none"><span>4.8(23)</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="new_item">
+              <div class="new_img">
+                <a href="#none"><img src="./img/new_product7.png" alt="new product"></a>
+                <div class="new_shopping">
+                  <span><img src="./img/heart.png" alt="wish"></span>
+                  <span><img src="./img/basket.png" alt="basket"></span>
+                </div>
+              </div>  
+              <div class="new_info">
+                <div class="new_explain">
+                  <a href="#none">
+                    <p>약해진 장벽 고민을 위해 덱스판테놀 5% 촉촉 클렌징</p>
+                    <p>[제로마진] 덱스판테놀 비누 100g</p>
+                  </a>
+                </div>
+                <div class="new_price">
+                  <span>5,800원</span>
+                  <a href="#none"><span>4.8(23)</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="new_btn_container">
+            <button class="new_btn " id="new_prev"><img src="./img/prev.png" alt="prev button"></button>
+            <button class="new_btn " id="new_next"><img src="./img/next.png" alt="next button"></button>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="banner_inner">
+          <ul class="banner_slide">
+            <li><a href="#none"><img src="./img/banner1.png" alt="banner"></a></li>
+            <li><a href="#none"><img src="./img/banner2.png" alt="banner"></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="main_fourth">
+        <div class="best">
+          <div class="best_title">
+            <h3>베스트 셀러</h3>
+            <p>고객님에게 가장 사랑받은</p>
+            <a href="#none">전체보기+</a>
+          </div>
+          <div class="best_slide">
+            <div class="best_item">
+              <div class="best_img">
+                <a href="#none"><img src="./img/best_product1.png" alt="best product"></a>
+                <div class="best_shopping">
+                  <span><img src="./img/heart.png" alt="wish"></span>
+                  <span><img src="./img/basket.png" alt="basket"></span>
+                </div>
+              </div>
+                <div class="best_info">
+                  <div class="best_explain">
+                    <a href="#none">
+                      <p>고농축 파우더 원료로 다양한 부위를 편안하고 깨끗하게</p>
+                      <p>센텔라시카 힐스크림 35g</p>
+                    </a>
+                  </div>
+                <div class="best_price">
+                  <span>14,800원</span>
+                  <span>22,000원</span>
+                  <a href="#none"><span>4.8(23)</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="best_item">
+              <div class="best_img">
+                <a href="#none"><img src="./img/best_product2.png" alt="best product"></a>
+                <div class="best_shopping">
+                  <span><img src="./img/heart.png" alt="wish"></span>
+                  <span><img src="./img/basket.png" alt="basket"></span>
+                </div>
+              </div>
+              <div class="best_info">
+                <div class="best_explain">
+                  <a href="#none">
+                    <p>EGF20%+FGF+IGF 리페어 앰플이 담긴 파운데이션</p>
+                    <p>민중기 EFI 앰플 파운데이션 40g</p>
+                  </a>
+                </div>
+                <div class="best_price">
+                  <span>26,000원</span>
+                  <span>34,000원</span>
+                  <a href="#none"><span>4.8(23)</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="best_item">
+              <div class="best_img">
+                <a href="#none"><img src="./img/best_product3.png" alt="best product"></a>
+                <div class="best_shopping">
+                  <span><img src="./img/heart.png" alt="wish"></span>
+                  <span><img src="./img/basket.png" alt="basket"></span>
+                </div>
+              </div>
+              <div class="best_info">
+                <div class="best_explain">
+                  <a href="#none">
+                    <p>장벽 강화/약산성 촉촉한 딥 클렌징</p>
+                    <p>닥터트럽 클렌징 밀크 200ml</p>
+                  </a>
+                </div>
+                <div class="best_price">
+                  <span>13,600원</span>
+                  <a href="#none"><span>4.8(23)</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="best_item">
+              <div class="best_img">
+                <a href="#none"><img src="./img/best_product4.png" alt="best product"></a>
+                <div class="best_shopping">
+                  <span><img src="./img/heart.png" alt="wish"></span>
+                  <span><img src="./img/basket.png" alt="basket"></span>
+                </div>
+              </div>
+              <div class="best_info">
+                <div class="best_explain">
+                  <a href="#none">
+                    <p>순수 무기차단제 100 NO옥시벤존/NO옥티녹세이트</p>
+                    <p>울13년을 사랑받아온 민중기 무기자차 썬크림 SPF40 PA++</p>
+                  </a>
+                </div>
+                <div class="best_price">
+                  <span>16,400원</span>
+                  <a href="#none"><span>4.8(23)</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="best_item">
+              <div class="best_img">
+                <a href="#none"><img src="./img/best_product5.png" alt="best product"></a>
+                <div class="best_shopping">
+                  <span><img src="./img/heart.png" alt="wish"></span>
+                  <span><img src="./img/basket.png" alt="basket"></span>
+                </div>
+              </div>
+              <div class="best_info">
+                <div class="best_explain">
+                  <a href="#none">
+                    <p>리포좀 EGF 50PPM 20% 적용 리페어/주름개선</p>
+                    <p>민중기 EGF 앰플 11ml</p>
+                  </a>
+                </div>
+                <div class="best_price">
+                  <span>39,800원</span>
+                  <a href="#none"><span>4.8(23)</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="best_btn_container">
+            <button class="best_btn " id="best_prev"><img src="./img/prev.png" alt="prev button"></button>
+            <button class="best_btn " id="best_next"><img src="./img/next.png" alt="next button"></button>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="main_fifth">
+        <div class="recommend">
+          <h4 class="recommend_title">시드물이 추천해요</h4>
+          <div class="recommend_item">
+            <div class="daily_item">
+              <a href="#none">
+                <img src="./img/daily.png" alt="daily item recommend">
+                <p>시드물에서 추천하는 오늘의 화장품</p>
+                <span>오늘 시드물이 추천하는 아이템이 무엇인지 확인해 보세요</span>
+              </a>
+            </div>
+            <div class="solution_item">
+              <a href="#none">
+                <img src="./img/solution.png" alt="solution item recommend">
+                <p>고민 해결을 위한 아이템</p>
+                <span>주름&탄력 관리 / 닥터트럽 / 수분크림 / 미백관리</span>
+              </a>
+            </div>
+            <div class="derma_item">
+              <a href="#none">
+                <img src="./img/derma.png" alt="derma item recommend">
+                <p>피부 자극은 다운 진정 효과는 업</p>
+                <span>이제는 피부도 과학적으로! 민감한 피부를 위한 더마 라인</span>
+              </a>
+            </div>
+            <div class="hot_item">
+              <a href="#none">
+                <img src="./img/hot.png" alt="hot item recommend">
+                <p>어디선가 한번 들어본 그 제품</p>
+                <span>시카로 광채 앰플부터 정품 모공브러쉬까지</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main_sixth">
+        <div class="only">
+          <h5 class="only_title">오직, 시드물에서 만나요!</h5>
+          <div class="only_category">
+            <ul>
+              <li class="nano_category">무기자차 시리즈</li>
+              <li class="mada_category">마다가스카르라인</li>
+              <li class="mask_category">마스크팩</li>
+              <li class="sacchara_category">사카로 발효 시리즈</li>
+              <li class="care_category">AC 스팟케어</li>
+            </ul>
+          </div>
+          <div class="only_contents">
+            <div class="only_nano">
+              <button class="nano_btn only_btn">제품 전체보기 &#129046;</button>
+              <div class="nano_container only_container">
+                <div class="item_1">
+                  <div><a href="#none"><img src="./img/nano_minjunggi.png" alt="none nano product"></a></div>
+                  <a href="#none">                  
+                    <p>순수 무기차단제 100 NO옥시벤존/NO옥티녹세이트</p>
+                    <p>13년을 사랑받아온 민중기 무기자차 썬크림 SPF40 PA++</p>
+                  </a>
+                  <p>16,400원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+                <div class="item_2">
+                  <div><a href="#none"><img src="./img/nano_daily.png" alt="none nano product"></a></div>
+                  <a href="#none">
+                    <p>물리차단제100 백탁적은 무기자차</p>
+                    <p>무기자차 데일리 썬밀크 SPF20 PA++ 75ml</p>
+                  </a>
+                  <p>15,900원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+                <div class="item_3">
+                  <div><a href="#none"><img src="./img/nano_eco.png" alt="none nano product"></a></div>
+                  <a href="#none">
+                    <p>대나무수 72% 청정한 보습 수분크림</p>
+                    <p>메가펩타이드 에코하이드로 수딩크림 60ml</p>
+                  </a>
+                  <p>28,400원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+              </div>
+            </div>
+            <div class="only_mada">
+              <button class="mada_btn only_btn">제품 전체보기 &#129046;</button>
+              <div class="mada_container only_container">
+                <div class="item_1">
+                  <div><a href="#none"><img src="./img/mada_skin.png" alt="madagascar product"></a></div>
+                  <a href="#none">                  
+                    <p>자극받은 피부진정, 장벽관리</p>
+                    <p>마다가스카르 병풀 스킨 150ml</p>
+                  </a>
+                  <p>14,800원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+                <div class="item_2">
+                  <div><a href="#none"><img src="./img/mada_bar.png" alt="madagascar product"></a></div>
+                  <a href="#none">
+                    <p>민감한 문제성 피부를 위한 순한 진정 클렌징!</p>
+                    <p>시드물 병풀 수딩바 100g</p>
+                  </a>
+                  <p>8,600원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+                <div class="item_3">
+                  <div><a href="#none"><img src="./img/mada_cica.png" alt="madagascar product"></a></div>
+                  <a href="#none">
+                    <p>시카, 탄력, 미백 한번에! 데일리 흔적 케어</p>
+                    <p>레티놀 시카 흔적 엠플 30ml</p>
+                  </a>
+                  <p>21,800원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+              </div>
+            </div>
+            <div class="only_mask">
+              <button class="mask_btn only_btn">제품 전체보기 &#129046;</button>
+              <div class="mask_container only_container">
+                <div class="item_1">
+                  <div><a href="#none"><img src="./img/mask_night.png" alt="mask pack product"></a></div>
+                  <a href="#none">                  
+                    <p>워터드롭 슬리핑팩 미백/주름개선</p>
+                    <p>나이트 슬리핑 팩 60g</p>
+                  </a>
+                  <p>9,800원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+                <div class="item_2">
+                  <div><a href="#none"><img src="./img/mask_modelling.png" alt="mask pack product"></a></div>
+                  <a href="#none">
+                    <p>모델링팩 기능 UP 1+1 EVENT</p>
+                    <p>모델링 파우더 믹싱 워터 200ml</p>
+                  </a>
+                  <p>8,600원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+                <div class="item_3">
+                  <div><a href="#none"><img src="./img/mask_pad.png" alt="mask pack product"></a></div>
+                  <a href="#none">
+                    <p>시드물 포에버 / 녹차+판테놀 /진정/시카/수분/토닝/</p>
+                    <p>그린티 카밍 릴랙스 패드 70매</p>
+                  </a>
+                  <p>21,000원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+              </div>
+            </div>
+            <div class="only_sacchara">
+              <button class="sacchara_btn only_btn">제품 전체보기 &#129046;</button>
+              <div class="sacchara_container only_container">
+                <div class="item_1">
+                  <div><a href="#none"><img src="./img/sacchara_ampoule.png" alt="sacchara product"></a></div>
+                  <a href="#none">                  
+                    <p>37% 할인 이벤트 중 명품 발효 성분 광채/리뉴얼/보습</p>
+                    <p>사카로 광채 앰플 100ml</p>
+                  </a>
+                  <p>30,870원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+                <div class="item_2">
+                  <div><a href="#none"><img src="./img/sacchara_cream.png" alt="sacchara product"></a></div>
+                  <a href="#none">
+                    <p>발효 광채 탄력의 꿈 광채피부/자연보습</p>
+                    <p>사카로 광채 탄력 크림 80g</p>
+                  </a>
+                  <p>31,200원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+                <div class="item_3">
+                  <div><a href="#none"><img src="./img/sacchara_toner.png" alt="sacchara product"></a></div>
+                  <a href="#none">
+                    <p>효모발효여과물 85% 따가움 개선 버전</p>
+                    <p>NEW 사카로 광채 토너 128ml</p>
+                  </a>
+                  <p>19,600원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+              </div>
+            </div>
+            <div class="only_care">
+              <button class="care_btn only_btn">제품 전체보기 &#129046;</button>
+              <div class="care_container only_container">
+                <div class="item_1">
+                  <div><a href="#none"><img src="./img/care_skinsource.png" alt="ac care product"></a></div>
+                  <a href="#none">                  
+                    <p>나이아신아마이드 30% 생기, 모공을 위한 믹스템!</p>
+                    <p>[제로마진] 스킨소스 나이아신 30 앰플 12ml</p>
+                  </a>
+                  <p>5,800원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+                <div class="item_2">
+                  <div><a href="#none"><img src="./img/care_cicaheals.png" alt="ac care product"></a></div>
+                  <a href="#none">
+                    <p>발효 광채 탄력의 꿈 광채피부/자연보습</p>
+                    <p>사카로 광채 탄력 크림 80g</p>
+                  </a>
+                  <p>31,200원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+                <div class="item_3">
+                  <div><a href="#none"><img src="./img/care_egf.png" alt="ac care product"></a></div>
+                  <a href="#none">
+                    <p>고농축 파우더 원료로 다양한 부위를 편안하고 깨끗하게</p>
+                    <p>센텔라시카 힐스크림 35g</p>
+                  </a>
+                  <p>14,800원</p>
+                  <a href="#none"><span>4.8(23)</span></a>
+                  <button>리뷰보기  &#10095;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main_seventh">
+        <div class="best_review">
+          <div class="review_title">
+            <h6>베스트 리뷰</h6>
+            <a href="#none">전체보기+</a>
+          </div>
+          <div class="review_container">
+            <div class="review_content">
+              <a href="#none">
+                <div class="review_img">
+                  <img src="./img/review_real1.png" alt="review product">
+                  <img src="./img/review_sell1.png" alt="review product">
+                </div>
+                <p>화장품 유목민이 벌써 4통째 쓰는 클렌징 밀크</p>
+                <p>부드럽고...촉촉하고....자극없이 순하게 지워지는 클렌징 밀쿠...
+                  하지만 세정력은 강려쿠하다.... 진짜 채고 
+                  저 믿고 한번 써보세뇨 여러분!!!
+                  민감성 여드*성 피부에도 안심하고 쓸 수 잇답미다</p>
+              </a>
+              <p>b*****</p>
+              <div class="review_product">
+                <img src="./img/review_product1.png" alt="review product">
+                <div>
+                  <p>닥터트럽 클렌징 밀크 200ml</p>
+                  <div>
+                    <span>리뷰 999+</span>
+                    <span>평점 5.0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review_content">
+              <a href="#none">
+                <div class="review_img">
+                  <img src="./img/review_real2.png" alt="review product">
+                  <img src="./img/review_sell2.png" alt="review product">
+                </div>
+                <p>레티놀 세럼 1.1</p>
+                <p>레티놀 세럼 1.1로 레티놀 성분은 처음 써봤어요
+                  다행히 잘 맞아서 행복해요ㅠㅠ
+                  조도 차이가 있긴 하지만 쓰고 안쓰고 피부가 정말 차이나요
+                  레티놀 쓰면 각질도 잠재워주고 화장도 더 잘 먹게 해주는거 같아요</p>
+              </a>
+              <p>n*******</p>
+              <div class="review_product">
+                <img src="./img/review_product2.png" alt="review product">
+                <div>
+                  <p>닥터트럽 레티놀 세럼 1.1 32g</p>
+                  <div>
+                    <span>리뷰 999+</span>
+                    <span>평점 5.0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review_content">
+              <a href="#none">
+                <div class="review_img">
+                  <img src="./img/review_real3.png" alt="review product">
+                  <img src="./img/review_sell3.png" alt="review product">
+                </div>
+                <p>힐스크림 후기</p>
+                <p>제가 귀차니즘 심한 인간이라 후기 잘안쓰는데 
+                  너무 마음에 들어 후기작성합니다.
+                  왜때문인지 피부가 뒤집히고 모*염이 심했던 시절...
+                  리빌딩의 힘을 빌려 묵힌피지들을 쏘옥 끌어올려봤어요.
+                  동네 피부관리실가서 묵힌 피지들을 다 압출후.....
+                  힐스크림이 딱 도착했길래바르기 시작했는데 
+                  왠걸.......ㅋㅋㅋ다음날 압출했던 부분이 딱지가 생겨서 
+                  가라앉기 시작하더라구요?
+                  그리고 조금만 안맞아도 피부가 간질거리는데 
+                  힐스크림은 바르자마자내꺼다..싶더라구요.
+                  잘맞을거같은 스멜났는데 역시나..!
+                  마지막 일주일 경과 사진보면 알겠지만 
+                  모*염도 거의 사라졌고피지들을 거의 없어요!!
+                  딱지생겼던 부위만 조금 거슬리지
+                  피부가 매끈매끈 ㅠㅠㅠ
+                  햇빛에 짜잘한 알갱이 피지들이 많이 보였는데 
+                  그런것도 거의 사라졌어요!
+                  한가지 아쉬운게 유분끼만 있고 되직한 제형이라
+                  세라마이드 앰플 한방울 발랐더니 엄청 촉촉하고 
+                  피부만지면 오바보태서 찹쌀떡느낌 나더라구요 ㅠㅠ
+                  화장품 디자인 자체도 연고느낌인데 
+                  진짜 내피부에 연고발라주는 느낌나요 ㅎㅎㅎ
+                  역시 시드물은 갓드물이다 ㅠㅠㅠㅠㅠㅠㅠ
+                  저랑 같은 피부고민이었던 분들 츄라이 해보세요!!</p>
+                </a>
+              <p>s*****</p>
+              <div class="review_product">
+                <img src="./img/review_product3.png" alt="review product">
+                <div>
+                  <p>센텔라시카 힐스크림 35g</p>
+                  <div>
+                    <span>리뷰 999+</span>
+                    <span>평점 5.0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review_content">
+              <a href="#none">
+                <div class="review_img">
+                  <img src="./img/review_real4.png" alt="review product">
+                  <img src="./img/review_sell4.png" alt="review product">
+                </div>
+                <p>히아루론산 토너 리뷰 - 모공, 기름 피부</p>
+                <p>지성, 모공, 여드* 피부 리뷰입니다
+                  장점!
+                  1. 얼굴 유분/기름기가 줄어들어요
+                  2. (기분때문인가요) 사용후 다음날 모공이 작아졌어요!
+                  3. 여드* 진정 작용 까지는 아니지만 트러* 유발을 하지 않습니다
+                  4. 피부가 맑아져요 (톤업 까진 아니고 속에서 조명 킨듯이 밝아져요)
+                  사용감이 미그덩하긴 한데 찹찹 두드리면 빨리 흡수되더라고요!
+                  조금만 써도되서 오래 사용 가능할것같아요~</p>
+                </a>
+              <p>s*********</p>
+              <div class="review_product">
+                <img src="./img/review_product4.png" alt="review product">
+                <div>
+                  <p>히아루론산 토너 150ml</p>
+                  <div>
+                    <span>리뷰 999+</span>
+                    <span>평점 5.0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main_eighth">
+        <div class="sidmool_now">
+          <h6>지금 시드물은?</h6>
+          <div class="now_slide">
+            <div><a href="#none"><img src="./img/sidmool_now1.png" alt="about sidmool"></a></div>
+            <div><a href="#none"><img src="./img/sidmool_now2.png" alt="about sidmool"></a></div>
+            <div><a href="#none"><img src="./img/sidmool_now3.png" alt="about sidmool"></a></div>
+            <div><a href="#none"><img src="./img/sidmool_now4.png" alt="about sidmool"></a></div>
+          </div>
+          <div class="now_btn_container">
+            <button class="now_btn " id="now_prev"><img src="./img/prev.png" alt="prev button"></button>
+            <button class="now_btn " id="now_next"><img src="./img/next.png" alt="next button"></button>
+          </div>
+        </div>
+      </section>
+      <div class="quick_container">
+        <div class="counsel">
+          <button class="modal_btn"><img src="./img/channel_talk.png" alt="channel talk button"></button>
+        </div>
+          <div class="modal">
+              <div class="modal_header">
+                <div class="title_img"><img src="./img/leaf.png" alt="logo"></div>
+                <div class="title">시드물</div>
+                <div class="setting"><i class="fa-solid fa-gear"></i></div>
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+              </div>
+              <div class="description"><p>since 2006 오리지널 자연주의 화장품 시드물</p></div>
+              <div class="content">
+                <div class="title_img_wrapper">
+                  <div class="title_img"><img src="./img/leaf.png" alt="logo"></div>
+                </div>
+                <div class="inform">
+                  <div>시드물</div>
+                  <p>반갑습니다 고객님!<br>
+                    오늘도 시드물을 방문해<br>
+                    주셔서 감사합니다 &#128522;<br>
+                    <br>
+                    상담시간은<br>
+                    평일 09:00 ~ 17:00 입니다<br>
+                    궁금하신 점은<br>
+                    무엇이든 물어봐주세요 &#128161;</p>
+                </div>
+                <div class="btn_wrapper"><button><i class="fa-regular fa-paper-plane"></i> 새 문의하기</button></div>
+              </div>
+              <div class="kakao">
+                <div>카카오톡으로 상담하기</div>
+                <div><img src="./img/kakao_color.png" alt="sidmool kakao"></div>
+              </div>
+          </div>
+        <div class="totop">
+          <a href="#"><img src="./img/totop.png" alt="totop"></a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="nav_wrap">
+        <div class="nav_menu">
+          <nav>
+            <a href="#none">개인정보처리방침</a>
+            <a href="#none">영상정보처리기기 운영/관리 방침</a>
+            <a href="#none">이용약관</a>
+            <a href="#none">이용안내</a>
+            <a href="#none">사업자정보확인</a>
+          </nav>
+          <div class="nav_sns">
+            <a href="#none"><img src="./img/kakaotalk.png" alt="sidmool kakaotalk"></a>
+            <a href="#none"><img src="./img/instagram.png" alt="sidmool instagram"></a>
+            <a href="#none"><img src="./img/youtube.png" alt="sidmool youtube"></a>
+            <a href="#none"><img src="./img/facebook.png" alt="sidmool facebook"></a>
+          </div>
+        </div>
+      </div>
+      <div class="info_container">
+        <div class="info_1">
+          <p>
+            <img src="./img/logo_black.png" alt="logo">
+            <br>
+            <span>(주)시드물</span>
+            <span>우)35083 대전광역시 중구 안영로 42(안영동)</span>
+            <span>대표 : 민병권</span>
+            <br>
+            <span>전화 : 1577-9638(해외 : +82-42-716-0227)</span>
+            <span>팩스 : 042-367-7989</span>
+            <br>
+            <span>사업자등록번호 : 305-81-94469</span>
+            <span>건강기능식품판매업 : 대전 중구 제 503</span>
+            <br>
+            <span>통신판매업신고번호 : 제2008-대전중구-0247호</span>
+            <span>화장품 제조판매업 등록필증 제 1163호</span>
+            <br>
+            <span>서비스개선 : help@sidmool.com</span>
+            <span>개인정보책임자:박소진</span>
+            <br>
+            <br>
+            <span>COPYRIGHT (C) 2008 SIDMOOL ALL RIGHTS RESERVED</span>
+            <span>Hosting by MakeShop</span>
+          </p>
+        </div>
+        <div class="info_2">
+          <div>
+            <p>
+              <span>고객센터 이용안내</span>
+              <br>
+              <span>1577-9638</span>
+              <br>
+              <span>해외 : +82-42-716-0227</span>
+              <br>
+              <span>팩스 : 042-367-7989</span>
+              <br>
+              <span>이메일 : help@sidmool.com</span>
+            </p>
+          </div>
+          <div>
+            <p>
+              <span>전화상담 업무시간</span>
+              <br>
+              <span>(공휴일 / 토요일 휴무)</span>
+              <br>
+              <span>이용시간 AM 09:00 ~ PM 17:00</span>
+              <br>
+              <span>점심시간 PM 12:00 ~ PM 13:30</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b647c590f1.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+  </body>
+</html>

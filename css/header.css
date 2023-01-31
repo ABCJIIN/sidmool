@@ -1,0 +1,265 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;500&family=Noto+Sans+KR:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+header {
+  width: 100%;
+}
+
+header .top {
+  width: 100%;
+  height: 100px;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #dbdbdb;
+
+}
+
+header .top .top_inner {
+  width: 1250px;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+header .top .top_inner .top_left {
+  display: flex;
+  align-items: center;
+}
+
+header .top .top_inner .top_left img {
+  width: 88px;
+  cursor: pointer;
+  margin-right: 60px;
+  margin-left: 10px;
+}
+
+header .top .top_inner .top_left .search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: left;
+  border: 2px solid #6d6d6d;
+  min-width: 380px;
+  height: 42px;
+  border-radius: 50px;
+}
+
+header .top .top_inner .top_left .search input {
+  width: 100%;
+  margin: 0 21px;
+  border: 0;
+  padding-right: 30px;
+  font-size: 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+}
+
+header .top .top_inner .top_left .search input:focus {
+  outline: none;
+}
+
+header .top .top_inner .top_left .search i {
+  position: absolute;
+  right: 21px;
+  color: #6d6d6d;
+}
+
+header .top .top_inner .top_right {
+  display: flex;
+  align-items: center;
+}
+
+header .top .top_inner .top_right ul li:hover a {
+  color: #18861f;
+}
+
+header .top .top_inner .top_right ul {
+  display: flex;
+  align-items: center;
+}
+
+header .top .top_inner .top_right ul li {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  padding: 0 5px;
+}
+
+header .top .top_inner .top_right ul li:nth-child(1)::after {
+  content: "|";
+  color: #4e4e4e;
+  padding-left: 10px;
+}
+
+header .top .top_inner .top_right ul li a {
+  text-decoration: none;
+  color: #5b5b5b;
+}
+
+header .gnb {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 70px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+header .gnb .gnb_inner {
+  max-width: 1250px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+header .gnb .gnb_inner .menu {
+  height: inherit;
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+header .gnb .gnb_inner .menu .menu_main {
+  display: flex;
+  height: inherit;
+}
+
+header .gnb .gnb_inner .menu .menu_main .main_list:nth-child(1) {
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+}
+
+header .gnb .gnb_inner .menu .menu_main .main_list {
+  position: relative;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+header .gnb .gnb_inner .menu .menu_main .main_list:hover > a {
+  color: #18861f;
+}
+
+header .gnb .gnb_inner .menu .menu_main .main_list a {
+  padding: 0 25px;
+  text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #1e1d1c;
+}
+
+header .gnb .gnb_inner .menu .menu_main .main_list .list_drop {
+  display: none;
+  position: absolute;
+  top: 71px;
+  width: 1250px;
+  background: #ffffff;
+  border: solid #dbdbdb;
+  border-width: 0 1px 1px 1px;
+  z-index: 1;
+}
+
+header .gnb .gnb_inner .menu .menu_main .main_list .list_drop .list_container ul li:hover a {
+  color: #a5d0aa;
+}
+
+header .gnb .gnb_inner .menu .menu_main .main_list:hover .list_drop {
+  display: block;
+}
+
+
+header .gnb .gnb_inner .menu .menu_main .main_list .list_drop ul {
+  float: left;
+}
+
+header .gnb .gnb_inner .menu .menu_main .main_list .list_drop .list_container {
+  padding-right: 30px;
+  padding-left: 45px;
+}
+
+
+header .gnb .gnb_inner .menu .menu_main .main_list .list_drop .list_title {
+  padding-bottom: 25px;
+  padding-top: 50px;
+  border-bottom: 1px solid #cecaca;
+}
+
+header .gnb .gnb_inner .menu .menu_main .main_list .list_drop .list_title > a {
+  text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #1e1d1c;
+}
+
+header
+  .gnb
+  .gnb_inner
+  .menu
+  .menu_main
+  .main_list
+  .list_drop
+  .list_container
+  ul {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+header
+  .gnb
+  .gnb_inner
+  .menu
+  .menu_main
+  .main_list
+  .list_drop
+  .list_container
+  ul
+  li {
+  padding-bottom: 20px;
+}
+
+header
+  .gnb
+  .gnb_inner
+  .menu
+  .menu_main
+  .main_list
+  .list_drop
+  .list_container
+  ul
+  li
+  a {
+  text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #626060;
+}
+
+header .gnb .gnb_inner .privacy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+header .gnb .gnb_inner .privacy ul {
+  display: flex;
+  align-items: center;
+}
+
+header .gnb .gnb_inner .privacy ul li {
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+header .gnb .gnb_inner .privacy ul li img {
+  border: 0;
+  height: 24px;
+}
