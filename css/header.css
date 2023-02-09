@@ -116,7 +116,7 @@ header .gnb .gnb_inner {
   margin: 0 auto;
 }
 
-header .gnb .gnb_inner .menu {
+.gnb .gnb_inner .menu {
   height: inherit;
   display: flex;
   font-family: "Noto Sans KR", sans-serif;
@@ -124,28 +124,25 @@ header .gnb .gnb_inner .menu {
   font-size: 1rem;
 }
 
-header .gnb .gnb_inner .menu .menu_main {
+.gnb_inner .menu .menu_main {
   display: flex;
   height: inherit;
 }
 
-header .gnb .gnb_inner .menu .menu_main .main_list:nth-child(1) {
-  border-right: 1px solid #dbdbdb;
-  border-left: 1px solid #dbdbdb;
-}
-
-header .gnb .gnb_inner .menu .menu_main .main_list {
+.gnb_inner .menu .menu_main .main_list {
   position: relative;
   height: inherit;
   display: flex;
   align-items: center;
 }
 
-header .gnb .gnb_inner .menu .menu_main .main_list:hover > a {
-  color: #18861f;
+.gnb_inner .menu .menu_main .main_list:nth-child(1) {
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
 }
 
-header .gnb .gnb_inner .menu .menu_main .main_list a {
+
+.menu .menu_main .main_list a {
   padding: 0 25px;
   text-decoration: none;
   font-family: "Noto Sans KR", sans-serif;
@@ -154,7 +151,7 @@ header .gnb .gnb_inner .menu .menu_main .main_list a {
   color: #1e1d1c;
 }
 
-header .gnb .gnb_inner .menu .menu_main .main_list .list_drop {
+.menu_main .main_list .list_drop {
   display: none;
   position: absolute;
   top: 71px;
@@ -165,81 +162,41 @@ header .gnb .gnb_inner .menu .menu_main .main_list .list_drop {
   z-index: 1;
 }
 
-header .gnb .gnb_inner .menu .menu_main .main_list .list_drop .list_container ul li:hover a {
-  color: #a5d0aa;
+.menu_main .main_list:hover .list_drop {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-header .gnb .gnb_inner .menu .menu_main .main_list:hover .list_drop {
-  display: block;
+.main_list .list_drop .list_container {
+  padding: 65px 0;
 }
 
-
-header .gnb .gnb_inner .menu .menu_main .main_list .list_drop ul {
-  float: left;
-}
-
-header .gnb .gnb_inner .menu .menu_main .main_list .list_drop .list_container {
-  padding-right: 30px;
-  padding-left: 45px;
-}
-
-
-header .gnb .gnb_inner .menu .menu_main .main_list .list_drop .list_title {
-  padding-bottom: 25px;
-  padding-top: 50px;
+.list_drop .list_container .list_title {
   border-bottom: 1px solid #cecaca;
+  padding-bottom: 25px;
 }
 
-header .gnb .gnb_inner .menu .menu_main .main_list .list_drop .list_title > a {
-  text-decoration: none;
-  font-family: "Noto Sans KR", sans-serif;
+.list_drop .list_container .list_title > a {
+  font-size: 16px;
   font-weight: 500;
-  font-size: 1rem;
-  color: #1e1d1c;
-}
-
-header
-  .gnb
-  .gnb_inner
-  .menu
-  .menu_main
-  .main_list
-  .list_drop
-  .list_container
-  ul {
-  padding-top: 20px;
-  padding-bottom: 50px;
-}
-
-header
-  .gnb
-  .gnb_inner
-  .menu
-  .menu_main
-  .main_list
-  .list_drop
-  .list_container
-  ul
-  li {
-  padding-bottom: 20px;
-}
-
-header
-  .gnb
-  .gnb_inner
-  .menu
-  .menu_main
-  .main_list
-  .list_drop
-  .list_container
-  ul
-  li
-  a {
-  text-decoration: none;
   font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
+}
+
+.list_drop .list_container .list_inner {
+  display: flex;
+  line-height: 300%;
+  padding-top: 25px;
+}
+
+.list_drop .list_container .list_inner ul li a {
   font-size: 14px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
   color: #626060;
+}
+
+.list_drop .list_container .list_inner ul li:hover a {
+  color: #a5d0aa;
 }
 
 header .gnb .gnb_inner .privacy {
